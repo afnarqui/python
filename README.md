@@ -27,4 +27,4 @@ Este proyecto permite trabajar con machine learning data science
   pip3 install scikit-learn
 ````
 
-[![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fjupyter.JPG?alt=media&token=474a1a51-3ae5-4c25-9ecc-47e3b0e40c3f)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fjupyter.JPG?alt=media&token=474a1a51-3ae5-4c25-9ecc-47e3b0e40c3f)
+[![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fregresionlineal.JPG?alt=media&token=16f4860a-980d-4125-8307-6fe94311d2ae)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fregresionlineal.JPG?alt=media&token=16f4860a-980d-4125-8307-6fe94311d2ae)
