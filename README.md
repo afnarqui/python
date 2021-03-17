@@ -57,4 +57,16 @@ de forma regular, La distancia entre cada punto sera de (b-a)/(n-1)
 shape define la dimensión
 Reshaping permite modificar la estructura de los array
 Slicing obtener una parte del array que se esta trabajando
+Operaciones aritméticas en Numpy
++ ufunc np.add
+- ufunc np.subtract
+* ufunc np.multiply
+np.exp(n) #exponencial
+np.log(n) # logarítmo natural
+np.sqrt(n) # raiz cuadrada
+np.greater(n,m) # superior o igual punto a punto
+universal functions ufuncs corren a velocidad de código compilado C.
+De poder utilizarse se deberían preferir a el uso de for loops.
+Un código Numpy solo con funciones nativas, sin bucles, se le llama código "vectorizado".
+Siempre que se pueda ejecutar el código con Numpy ya que este corre en C y es mil veces más rapido que un for loops que corre en python
 ````

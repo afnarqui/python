@@ -75,3 +75,35 @@ b[2,0:3]
 
 b[:,:]
 
+# Arítmetica
+a = np.arange(4)
+display(a)
+print("a    =", a + 5)
+print("a    =", a - 5)
+print("a    =", a * 2)
+print("a    =", a / 2)
+print("a    =", -a)
+print("a    =", a ** 2)
+print("a    =", a % 2)
+
+a = np.arange(4)
+b = np.arange(1,5)
+
+display(np.exp(a))
+display(np.log(b))
+display(np.sqrt(a))
+display(np.greater(a,b))
+
+# Commented out IPython magic to ensure Python compatibility.
+# %%timeit
+# a = np.arange(1000000)
+# b = np.zeros(1000000)
+# i = 0
+# for el in a:
+#   b[i] = el+el
+#   i+=1
+
+# Commented out IPython magic to ensure Python compatibility.
+# %%timeit
+# a+a
+
