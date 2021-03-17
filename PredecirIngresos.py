@@ -56,3 +56,22 @@ a = a1D.reshape(new_dims)
 
 np.array_equal(a, a2D)
 
+a = np.array([[1,0,3],[4,3,5],[6,10,-1]])
+a
+
+a[0,0]
+
+a[2,1]
+
+a = np.arange(10)
+b = np.eye(3)
+display(a); display(b)
+
+a[:5]
+
+b[0:3,1]
+
+b[2,0:3]
+
+b[:,:]
+

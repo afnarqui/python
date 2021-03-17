@@ -56,4 +56,5 @@ np.linspace(a,b,n) es una función que permite crear arrays de una dimensión, d
 de forma regular, La distancia entre cada punto sera de (b-a)/(n-1)
 shape define la dimensión
 Reshaping permite modificar la estructura de los array
+Slicing obtener una parte del array que se esta trabajando
 ````
