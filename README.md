@@ -103,5 +103,16 @@ type(data)
   tiene un index general y un index de columnas
   visaulizamos las columnas
   data.columns
+````
+
+## Inspección de los tipos de datos
+````bash
+  la inspección de los datos se da para tener conocimiento de la salud de lso datos que tenemos,
+  saber si vienen limpios o no, y también porque se quiere tener un entendimiento
+  cuantitativo de ellos. Parte de esto es mirar gráficos estadisticos y enteneder diferentes propiedades numerícas de las columnas
+  A diferencia de Numpy, Pandas no solo permite cargar datos numéricos, sino también datos de texto.
+  El método info nos va a mostar la cantidad completa de columnas con la cantidad de elementos no nulos que hay en esas columnas y por último muestra el tipo de cada columna
+  data.info
+  data.dtypes
   
 ````

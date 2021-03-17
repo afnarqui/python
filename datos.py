@@ -48,3 +48,38 @@ linea
 
 data.loc[:,'movie_title'].head()
 
+data.info
+
+# columnas númericas y columnas de texto
+type(data.dtypes)
+
+data.dtypes
+
+data.dtypes == float
+
+data.dtypes == int
+
+(data.dtypes == float) | (data.dtypes == int)
+
+data.dtypes == object
+
+num = (data.dtypes == float) | (data.dtypes == int)
+num
+
+num.index
+
+for el in num:
+  print(el)
+
+for el in num.index:
+  print(el)
+
+num_cols = [c for c in num.index if num[c]]
+
+num_cols
+
+obj = (data.dtypes == object)
+obj_cols = [c for c in obj.index if num[c]]
+
+obj_cols
+
