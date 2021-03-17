@@ -54,4 +54,6 @@ es una librería muy importante para el ecosistema de Python ya que es la base d
 muchas de las librerías de Michine Learning.
 np.linspace(a,b,n) es una función que permite crear arrays de una dimensión, de largo n, y que contienen puntos entre a y b, distanciados
 de forma regular, La distancia entre cada punto sera de (b-a)/(n-1)
+shape define la dimensión
+Reshaping permite modificar la estructura de los array
 ````
