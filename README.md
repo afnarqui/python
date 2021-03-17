@@ -28,3 +28,30 @@ Este proyecto permite trabajar con machine learning data science
 ````
 
 [![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fregresionlineal.JPG?alt=media&token=16f4860a-980d-4125-8307-6fe94311d2ae)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fregresionlineal.JPG?alt=media&token=16f4860a-980d-4125-8307-6fe94311d2ae)
+
+## Terminología
+````bash
+Datos tabulares = Datos en dos dimensiones.
+Líneas = Ejemplos
+Columnas = Feature. Estas son importantes por que nos van a ayudar a predecir cosas gracias a los modelos que usemos de Machine Learning
+Cantidad de columnas = Dimensión de los datos
+Output de un algoritmo de Machine Learning (ML) = modelo
+Variable objetivo = Target
+````
+
+## El ciclo de Machine Learning
+````bash
+Definición del problema
+Preparación de los datosn   limpiar datos, modificarlos, transformarlos
+Representación de los datos 
+Modelamiento / Algoritmos de ML regresión lineal, arbol de regresión etc
+Evaluación
+````
+
+## Numpy
+````bash
+es una librería muy importante para el ecosistema de Python ya que es la base de todos los cálculos cientificos y
+muchas de las librerías de Michine Learning.
+np.linspace(a,b,n) es una función que permite crear arrays de una dimensión, de largo n, y que contienen puntos entre a y b, distanciados
+de forma regular, La distancia entre cada punto sera de (b-a)/(n-1)
+````
