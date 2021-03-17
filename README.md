@@ -70,3 +70,38 @@ De poder utilizarse se deberían preferir a el uso de for loops.
 Un código Numpy solo con funciones nativas, sin bucles, se le llama código "vectorizado".
 Siempre que se pueda ejecutar el código con Numpy ya que este corre en C y es mil veces más rapido que un for loops que corre en python
 ````
+
+## Cargar datos
+````bash
+las Librerías son
+Numpy
+Pandas
+Matplotlib.pyplot
+Seaborn
+pd.read_css es el metodo que nos permite importar lso datos desde un CSV y cargarlo en un DataFrame, que es la estructura de base de Pandas
+from google.colab import drive
+drive.mount('/content/drive')
+%cd '/content/drive/MyDrive/python/datos/datosp'
+!ls
+dir = '/content/drive/MyDrive/python/datos/datosp/{}'.format('datosp.csv')
+data = pd.read_csv(dir, encoding='utf-8')
+data.head()
+type(data)
+````
+
+## Datos desde github
+````bash
+  data = 
+  pd.read_csv('https://github.com/afnarqui/python/dev/datos/valores.csv?raw=true', encoding='utf-8')
+  type(data)
+````
+
+## DataFrame
+````bash
+  se debe conocer cuantas lineas y columnas tiene nuestro dataframe
+  Un dataframe es una estructura de datos que se compone de los siguientes elementos
+  tiene un index general y un index de columnas
+  visaulizamos las columnas
+  data.columns
+  
+````
