@@ -125,3 +125,9 @@ type(data)
   data_num.describe()
   data_num['duration'].hist()
 ````
+
+## Limpiar datos
+````bash
+  pd.concat me permite unir datos
+````
+
