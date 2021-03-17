@@ -107,3 +107,13 @@ display(np.greater(a,b))
 # %%timeit
 # a+a
 
+# Estadística
+a = np.arange(10)
+
+display(np.mean(a)) #promedio
+display(np.median(a)) # emdiana
+
+np.percentile(a,40) # percentil
+
+np.random.random(10) # Aleatoridad
+
