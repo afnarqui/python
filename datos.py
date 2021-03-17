@@ -83,3 +83,27 @@ obj_cols = [c for c in obj.index if num[c]]
 
 obj_cols
 
+data[num_cols]
+
+data_num = data[num_cols]
+data_num
+
+data_num.describe()
+
+"""Para hacer nuestro primer modelo más simple para este trabajaremos csolo con las columnas númericas"""
+
+data_num['duration'].hist()
+
+data_num['imdb_score'].hist()
+
+data_num['budget'].hist()
+
+(data_num['budget'] > 1000000)
+
+(data_num['budget'] > 1000000).value_counts()
+
+mask = (data_num['budget'] > 1000000)
+mask
+
+data[mask]
+

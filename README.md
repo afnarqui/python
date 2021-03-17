@@ -114,5 +114,14 @@ type(data)
   El método info nos va a mostar la cantidad completa de columnas con la cantidad de elementos no nulos que hay en esas columnas y por último muestra el tipo de cada columna
   data.info
   data.dtypes
-  
+````
+
+
+## Estadísticas de las columnas númericas
+````bash
+  data[num_cols]
+  data_num = data[num_cols]
+  data_num
+  data_num.describe()
+  data_num['duration'].hist()
 ````
