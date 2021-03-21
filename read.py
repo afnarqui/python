@@ -25,18 +25,19 @@ print(IPython.sys_info())
 get_ipython().run_line_magic('cd', "'/home/jovyan/python/dataset'")
 
 
-# In[71]:
+# In[72]:
 
 
 get_ipython().system('ls')
 
 
-# In[65]:
+# In[74]:
 
 
 dir = '/home/jovyan/python/dataset/{}'.format('data.csv')
-file = 'data.csv'
-fullpath = os.path.join(dir, file)
+dir2 = '/home/jovyan/python/dataset/'
+file = 'Customer Churn Columns.csv'
+fullpath = os.path.join(dir2, file)
 data = pd.read_csv(dir, sep = ",", dtype={"pclass": np.float64}, header=0, names=None, index_col=None, na_filter=False)
 
 
@@ -45,6 +46,15 @@ data = pd.read_csv(dir, sep = ",", dtype={"pclass": np.float64}, header=0, names
 
 data.head()
 data.columns.values
+
+
+# In[79]:
+
+
+data_cols = pd.read_csv(fullpath)
+data_col_list = data_cols["Column_Names"].tolist()
+data2 = pd.read_csv(dir2 + "Tab Customer Churn Model.txt", header = None, names = data_col_list)
+data2.columns.values
 
 
 # In[ ]:
