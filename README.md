@@ -154,4 +154,7 @@ def createDummies(df, var_name):
 
 [![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fhistogramadefrecuencia.JPG?alt=media&token=028d358a-2e98-4205-8289-b78c5b7c4aa4)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fhistogramadefrecuencia.JPG?alt=media&token=028d358a-2e98-4205-8289-b78c5b7c4aa4)
 
+### Boxplot, diagrama de caja y bigotes
+
+[![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2FBoxplot.JPG?alt=media&token=3a6d384c-e419-42d3-bc25-474ab73d1b2f)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2FBoxplot.JPG?alt=media&token=3a6d384c-e419-42d3-bc25-474ab73d1b2f)
 
