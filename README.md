@@ -147,3 +147,5 @@ def createDummies(df, var_name):
     return df
 ````
 ### Plots y visualización de los datos
+
+[![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fplot.JPG?alt=media&token=a2a91614-153e-4db4-9bd2-cba636a0c55a)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fplot.JPG?alt=media&token=a2a91614-153e-4db4-9bd2-cba636a0c55a)
