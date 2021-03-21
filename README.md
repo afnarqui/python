@@ -146,4 +146,4 @@ def createDummies(df, var_name):
     df = pd.concat([df, dummy], axis = 1)
     return df
 ````
-
+### Plots y visualización de los datos
