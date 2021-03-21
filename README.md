@@ -129,5 +129,9 @@ type(data)
 ## Limpiar datos
 ````bash
   pd.concat me permite unir datos
+  data2.notnull() si sale False es por que faltan datos
+  help(pd.Series.value_counts) permite ver la documentación
 ````
+
+
 
