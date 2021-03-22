@@ -158,3 +158,9 @@ def createDummies(df, var_name):
 
 [![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2FBoxplot.JPG?alt=media&token=3a6d384c-e419-42d3-bc25-474ab73d1b2f)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2FBoxplot.JPG?alt=media&token=3a6d384c-e419-42d3-bc25-474ab73d1b2f)
 
+### Data Wrangling
+
+[![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fchuleta1.jpg?alt=media&token=5c443d8a-c36c-4a87-82a4-c2b56a6abe45)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fchuleta1.jpg?alt=media&token=5c443d8a-c36c-4a87-82a4-c2b56a6abe45)
+
+[![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fchuleta2.jpg?alt=media&token=6d35cf85-50f3-4945-8851-49676613011c)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fchuleta2.jpg?alt=media&token=6d35cf85-50f3-4945-8851-49676613011c)
+
