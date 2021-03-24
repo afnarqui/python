@@ -188,6 +188,90 @@ data6 = data[data["Day Mins"]< data["Night Mins"]]
 data6.shape
 
 
+# In[48]:
+
+
+##Minutos de día , de noche y Longitud de la Cuenta de los primeros 50 individuos
+## primero columnas y luego las filas
+subset_first_50 = data[["Day Mins", "Night Mins", "Account Length"]][:50]
+subset_first_50.shape
+subset_first_50.head()
+
+
+# In[49]:
+
+
+subset.head()
+
+
+# In[50]:
+
+
+subset[:10]
+
+
+# In[55]:
+
+
+## primero las filas y luego las columnas
+data.iloc[1:10,3:6]
+
+
+# In[56]:
+
+
+data.iloc[:,3:6] ## Todas las filas para las columnas entre la 3 y la 6
+data.iloc[1:10,:] ## Todas las columnas para las filas de la 1 a la 10
+
+
+# In[57]:
+
+
+data.iloc[1:10, [2,5,7]]
+
+
+# In[58]:
+
+
+data.iloc[[1,5,8,36],[2,5,7]]
+
+
+# In[60]:
+
+
+data.loc[[1,5,8,36],["Area Code", "VMail Plan", "Day Mins"]]
+
+
+# In[62]:
+
+
+data["Total Mins"] = data["Day Mins"] + data["Night Mins"] + data["Eve Mins"]
+
+
+# In[64]:
+
+
+data["Total Mins"].head()
+
+
+# In[65]:
+
+
+data["TotalCalls"] = data["Day Calls"] + data["Night Calls"] +data["Eve Calls"]
+
+
+# In[66]:
+
+
+data.shape
+
+
+# In[67]:
+
+
+data.head()
+
+
 # In[ ]:
 
 
