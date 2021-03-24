@@ -164,3 +164,9 @@ def createDummies(df, var_name):
 
 [![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fchuleta2.jpg?alt=media&token=6d35cf85-50f3-4945-8851-49676613011c)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fchuleta2.jpg?alt=media&token=6d35cf85-50f3-4945-8851-49676613011c)
 
+````python
+a = set(desired_columns)
+b = set(all_columns_list)
+sublist = b-a
+sublist = list(sublist)
+````
