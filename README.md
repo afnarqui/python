@@ -175,3 +175,5 @@ sublist = list(sublist)
 
 
 [![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fladistribucionuniforme.JPG?alt=media&token=9b9c09eb-78a8-44db-8ac2-282ee4241588)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fladistribucionuniforme.JPG?alt=media&token=9b9c09eb-78a8-44db-8ac2-282ee4241588)
+
+[![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fcampanadegauss.JPG?alt=media&token=4bd51934-2c8c-4f9a-a1ad-5b37ada61790)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fcampanadegauss.JPG?alt=media&token=4bd51934-2c8c-4f9a-a1ad-5b37ada61790)

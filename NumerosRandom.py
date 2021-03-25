@@ -160,6 +160,77 @@ for i in range(5):
     print(np.random.random())
 
 
+# ### Funciones de distribución de probabilidades
+# 
+# Distribución Uniforme
+
+# In[52]:
+
+
+a = 1
+b = 100
+n = 100000
+data = np.random.uniform(a, b, n)
+
+
+# In[53]:
+
+
+import matplotlib.pyplot as plt
+
+
+# In[54]:
+
+
+get_ipython().run_line_magic('matplotlib', 'inline')
+plt.hist(data)
+
+
+# ## Distribución Normal
+
+# In[62]:
+
+
+data = np.random.randn(1000000)
+
+
+# In[63]:
+
+
+x = range(1, 1000001)
+plt.plot(x, data)
+
+
+# In[64]:
+
+
+get_ipython().run_line_magic('matplotlib', 'inline')
+plt.hist(data)
+
+
+# In[65]:
+
+
+plt.plot(x, sorted(data))
+
+
+# In[67]:
+
+
+mu =5.5
+sd = 2.5
+z_10000 = np.random.randn(10000)
+data = 5.5 + 2.5 *z_10000  # z = (x -mu) / sd -> N(0,1), x = mu + sd * z
+plt.hist(data)
+
+
+# In[68]:
+
+
+data = np.random.randn(2, 4)
+data
+
+
 # In[ ]:
 
 
