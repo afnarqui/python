@@ -170,3 +170,8 @@ b = set(all_columns_list)
 sublist = b-a
 sublist = list(sublist)
 ````
+
+[![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Ffunciondeprobabilidades.JPG?alt=media&token=14d36d9a-d025-4181-be7a-1e63b9c906d4)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Ffunciondeprobabilidades.JPG?alt=media&token=14d36d9a-d025-4181-be7a-1e63b9c906d4)
+
+
+[![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fladistribucionuniforme.JPG?alt=media&token=9b9c09eb-78a8-44db-8ac2-282ee4241588)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fladistribucionuniforme.JPG?alt=media&token=9b9c09eb-78a8-44db-8ac2-282ee4241588)
