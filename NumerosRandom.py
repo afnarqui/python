@@ -150,6 +150,16 @@ column_list
 np.random.choice(column_list)
 
 
+# ### Seed
+
+# In[40]:
+
+
+np.random.seed(2021)
+for i in range(5):
+    print(np.random.random())
+
+
 # In[ ]:
 
 
