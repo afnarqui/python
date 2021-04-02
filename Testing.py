@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[29]:
+# In[38]:
 
 
 # Importar las librerias
@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
+import sklearn
 
 
 # In[2]:
@@ -100,6 +101,40 @@ len(train)
 
 
 len(test)
+
+
+# ### Usando una función de shuffle
+
+# In[36]:
+
+
+data.head()
+
+
+# In[41]:
+
+
+data = sklearn.utils.shuffle(data)
+
+
+# In[44]:
+
+
+cut_id = int(0.75* len(data))
+train_data = data[:cut_id ]
+test_data = data[cut_id +1:]
+
+
+# In[45]:
+
+
+len(train_data)
+
+
+# In[46]:
+
+
+len(test_data)
 
 
 # In[ ]:
