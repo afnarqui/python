@@ -180,3 +180,8 @@ sublist = list(sublist)
 
 
 [![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Finnerjoin.JPG?alt=media&token=3cddf1b3-577a-4c9d-a89d-46430ef42940)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Finnerjoin.JPG?alt=media&token=3cddf1b3-577a-4c9d-a89d-46430ef42940)
+
+
+[![N|Solid](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fleftjoin.JPG?alt=media&token=db8baff1-9c1e-4667-8d82-ffe09f92118b)](https://firebasestorage.googleapis.com/v0/b/sistemaadministrativodenegocio.appspot.com/o/python%2Fleftjoin.JPG?alt=media&token=db8baff1-9c1e-4667-8d82-ffe09f92118b)
+
+
