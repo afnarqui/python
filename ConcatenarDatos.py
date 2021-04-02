@@ -188,6 +188,97 @@ final_length
 final_length == data.shape[0]
 
 
+# # Joins de datasets
+
+# In[58]:
+
+
+get_ipython().run_line_magic('cd', "'/home/jovyan/python/dataset/athletes/'")
+get_ipython().run_line_magic('ls', '')
+filepath = '/home/jovyan/python/dataset/athletes/'
+data_main = pd.read_csv(filepath + 'Medals.csv', encoding= "ISO-8859-1")
+
+
+# In[54]:
+
+
+data_main.head()
+
+
+# In[55]:
+
+
+a = data_main["Athlete"].unique().tolist()
+
+
+# In[56]:
+
+
+len(a)
+
+
+# In[57]:
+
+
+data_main.shape
+
+
+# In[61]:
+
+
+data_country = pd.read_csv(filepath+"Athelete_Country_Map.csv", encoding= "ISO-8859-1")
+
+
+# In[62]:
+
+
+data_country.head()
+
+
+# In[63]:
+
+
+data_country.shape
+
+
+# In[64]:
+
+
+len(data_country)
+
+
+# In[65]:
+
+
+data_country[data_country["Athlete"] == "Aleksandar Ciric"]
+
+
+# In[66]:
+
+
+data_sports = pd.read_csv(filepath+"Athelete_Sports_Map.csv")
+
+
+# In[67]:
+
+
+data_sports.head()
+
+
+# In[68]:
+
+
+len(data_sports)
+
+
+# In[71]:
+
+
+data_sports[(data_sports["Athlete"]== "Chen Jing") | 
+            (data_sports["Athlete"] == "richard Thompson") | 
+            (data_sports["Athlete"] == "Matt Ryan")]
+
+
 # In[ ]:
 
 
