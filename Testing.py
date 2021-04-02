@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[29]:
 
 
 # Importar las librerias
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 
 
 # In[2]:
@@ -79,6 +80,26 @@ len(training)
 
 
 len(testing)
+
+
+# ### Con la libreria sklearn
+
+# In[31]:
+
+
+train, test = train_test_split(data, test_size = 0.2)
+
+
+# In[32]:
+
+
+len(train)
+
+
+# In[33]:
+
+
+len(test)
 
 
 # In[ ]:
