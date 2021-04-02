@@ -279,6 +279,69 @@ data_sports[(data_sports["Athlete"]== "Chen Jing") |
             (data_sports["Athlete"] == "Matt Ryan")]
 
 
+# In[77]:
+
+
+data_country_dp = data_country.drop_duplicates(subset="Athlete")
+len(data_country_dp)
+
+
+# In[79]:
+
+
+data_main_country = pd.merge(left = data_main, right = data_country_dp, 
+                             left_on = "Athlete", right_on = "Athlete")
+
+
+# In[80]:
+
+
+data_main_country.head()
+
+
+# In[81]:
+
+
+data_main_country.shape
+
+
+# In[82]:
+
+
+data_main_country[data_main_country["Athlete"] == "Aleksandar Ciric"]
+
+
+# In[83]:
+
+
+data_sports_dp = data_sports.drop_duplicates(subset="Athlete")
+
+
+# In[87]:
+
+
+len(data_sports_dp)  == len(a)
+
+
+# In[93]:
+
+
+data_final = pd.merge(left= data_main_country, right=data_sports_dp,
+                      left_on ="Athlete", right_on = "Athlete")
+
+
+# In[94]:
+
+
+data_final.head()
+
+
+# In[95]:
+
+
+data_final.shape
+
+
 # In[ ]:
 
 
