@@ -140,6 +140,187 @@ for names, groups in double_group:
     print(groups)
 
 
+# ### Operaciones sobre datos agrupados
+
+# In[33]:
+
+
+double_group.sum()
+
+
+# In[34]:
+
+
+double_group.mean()
+
+
+# In[35]:
+
+
+double_group.size()
+
+
+# In[36]:
+
+
+double_group.describe()
+
+
+# In[38]:
+
+
+grouped_income = double_group["Income"]
+
+
+# In[39]:
+
+
+grouped_income.describe()
+
+
+# In[40]:
+
+
+double_group.aggregate(
+    {
+        "Income": np.sum,
+        "Age": np.mean,
+        "Height": np.std
+    }
+)
+
+
+# In[41]:
+
+
+double_group.aggregate(
+    {
+        "Age" : np.mean,
+        "Height" : lambda h:np.mean(h)/np.std(h)
+    }
+)
+
+
+# In[42]:
+
+
+double_group.aggregate([np.sum, np.mean, np.std])
+
+
+# In[43]:
+
+
+double_group.aggregate([lambda x: np.mean(x) / np.std(x)])
+
+
+# ### Filtrado de datos
+
+# In[44]:
+
+
+double_group.sum()
+
+
+# In[45]:
+
+
+double_group["Age"].filter(lambda x: x.sum() > 2496)
+
+
+# ### Transformación de variables
+
+# In[49]:
+
+
+zscore = lambda x : (x - x.mean() ) / x.std()
+
+
+# In[52]:
+
+
+z_group = double_group.transform(zscore)
+
+
+# In[53]:
+
+
+plt.hist(z_group["Age"])
+
+
+# In[54]:
+
+
+fill_na_mean = lambda x : x.fillna(x.mean())
+
+
+# In[55]:
+
+
+double_group.transform(fill_na_mean)
+
+
+# ### Operaciones diversas muy útiles
+
+# In[56]:
+
+
+double_group.head(1)
+
+
+# In[57]:
+
+
+double_group.tail(1)
+
+
+# In[58]:
+
+
+double_group.nth(32)
+
+
+# In[59]:
+
+
+double_group.nth(82)
+
+
+# In[61]:
+
+
+data_sorted = data.sort_values(["Age", "Income"])
+
+
+# In[62]:
+
+
+data_sorted.head()
+
+
+# In[63]:
+
+
+age_grouped = data_sorted.groupby("Gender")
+
+
+# In[64]:
+
+
+age_grouped.head()
+
+
+# In[65]:
+
+
+age_grouped.tail(1)
+
+
+# In[66]:
+
+
+age_grouped.head(1)
+
+
 # In[ ]:
 
 
