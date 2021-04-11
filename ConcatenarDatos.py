@@ -3,13 +3,13 @@
 
 # # Concatenar y apendizar data sets
 
-# In[1]:
+# In[2]:
 
 
 import pandas as pd
 
 
-# In[31]:
+# In[3]:
 
 
 get_ipython().run_line_magic('cd', "'/home/jovyan/python/dataset'")
@@ -18,43 +18,43 @@ dir = '/home/jovyan/python/dataset/{}'.format('winequality-red.csv')
 dir_white = '/home/jovyan/python/dataset/{}'.format('winequality-white.csv')
 
 
-# In[13]:
+# In[4]:
 
 
 red_wine = pd.read_csv(dir, sep=";")
 
 
-# In[14]:
+# In[5]:
 
 
 red_wine.head()
 
 
-# In[15]:
+# In[6]:
 
 
 red_wine.columns.values
 
 
-# In[16]:
+# In[7]:
 
 
 red_wine.shape
 
 
-# In[18]:
+# In[8]:
 
 
 white_wine = pd.read_csv(dir_white, sep = ";")
 
 
-# In[19]:
+# In[9]:
 
 
 white_wine.columns.values
 
 
-# In[20]:
+# In[10]:
 
 
 white_wine.shape
@@ -64,25 +64,25 @@ white_wine.shape
 # * axis = 0 denota el eje horizontal
 # * axis = 1 denota el eje vertical
 
-# In[21]:
+# In[11]:
 
 
 wine_data = pd.concat([red_wine, white_wine], axis = 0)
 
 
-# In[22]:
+# In[12]:
 
 
 wine_data.shape
 
 
-# In[23]:
+# In[13]:
 
 
 wine_data.head()
 
 
-# In[24]:
+# In[14]:
 
 
 data1 = wine_data.head(10)
@@ -90,19 +90,19 @@ data2 = wine_data[300:310]
 data3 = wine_data.tail(10)
 
 
-# In[25]:
+# In[15]:
 
 
 wine_scramble = pd.concat([data1, data2, data3], axis = 0)
 
 
-# In[26]:
+# In[16]:
 
 
 wine_scramble
 
 
-# In[27]:
+# In[17]:
 
 
 wine_scramble = pd.concat([data2, data1, data3], axis=0)
@@ -111,20 +111,20 @@ wine_scramble
 
 # ### Datos distribuidos
 
-# In[32]:
+# In[18]:
 
 
 dir_distributed = '/home/jovyan/python/dataset/distributed-data/{}'.format('001.csv')
 data = pd.read_csv(dir_distributed)
 
 
-# In[33]:
+# In[19]:
 
 
 data.head()
 
 
-# In[34]:
+# In[20]:
 
 
 data.shape
@@ -137,7 +137,7 @@ data.shape
 #      * Cada uno de ellos debe apendizarse (añadirse al final) del primer fichero que ya habíamos cargado
 # * Repetimos el bucle hasta que no queden ficheros
 
-# In[47]:
+# In[21]:
 
 
 filepath = '/home/jovyan/python/dataset/distributed-data/'
@@ -158,31 +158,31 @@ for i in range(2, 333):
     
 
 
-# In[44]:
+# In[22]:
 
 
 data.shape
 
 
-# In[45]:
+# In[23]:
 
 
 data.tail()
 
 
-# In[46]:
+# In[24]:
 
 
 data.head()
 
 
-# In[48]:
+# In[25]:
 
 
 final_length
 
 
-# In[50]:
+# In[26]:
 
 
 final_length == data.shape[0]
@@ -190,7 +190,7 @@ final_length == data.shape[0]
 
 # # Joins de datasets
 
-# In[58]:
+# In[27]:
 
 
 get_ipython().run_line_magic('cd', "'/home/jovyan/python/dataset/athletes/'")
@@ -199,79 +199,79 @@ filepath = '/home/jovyan/python/dataset/athletes/'
 data_main = pd.read_csv(filepath + 'Medals.csv', encoding= "ISO-8859-1")
 
 
-# In[54]:
+# In[28]:
 
 
 data_main.head()
 
 
-# In[55]:
+# In[29]:
 
 
 a = data_main["Athlete"].unique().tolist()
 
 
-# In[56]:
+# In[30]:
 
 
 len(a)
 
 
-# In[57]:
+# In[31]:
 
 
 data_main.shape
 
 
-# In[61]:
+# In[32]:
 
 
 data_country = pd.read_csv(filepath+"Athelete_Country_Map.csv", encoding= "ISO-8859-1")
 
 
-# In[62]:
+# In[33]:
 
 
 data_country.head()
 
 
-# In[63]:
+# In[34]:
 
 
 data_country.shape
 
 
-# In[64]:
+# In[35]:
 
 
 len(data_country)
 
 
-# In[65]:
+# In[36]:
 
 
 data_country[data_country["Athlete"] == "Aleksandar Ciric"]
 
 
-# In[66]:
+# In[37]:
 
 
 data_sports = pd.read_csv(filepath+"Athelete_Sports_Map.csv")
 
 
-# In[67]:
+# In[38]:
 
 
 data_sports.head()
 
 
-# In[68]:
+# In[39]:
 
 
 len(data_sports)
 
 
-# In[71]:
+# In[40]:
 
 
 data_sports[(data_sports["Athlete"]== "Chen Jing") | 
@@ -279,67 +279,216 @@ data_sports[(data_sports["Athlete"]== "Chen Jing") |
             (data_sports["Athlete"] == "Matt Ryan")]
 
 
-# In[77]:
+# In[41]:
 
 
 data_country_dp = data_country.drop_duplicates(subset="Athlete")
 len(data_country_dp)
 
 
-# In[79]:
+# In[42]:
 
 
 data_main_country = pd.merge(left = data_main, right = data_country_dp, 
                              left_on = "Athlete", right_on = "Athlete")
 
 
-# In[80]:
+# In[43]:
 
 
 data_main_country.head()
 
 
-# In[81]:
+# In[44]:
 
 
 data_main_country.shape
 
 
-# In[82]:
+# In[45]:
 
 
 data_main_country[data_main_country["Athlete"] == "Aleksandar Ciric"]
 
 
-# In[83]:
+# In[46]:
 
 
 data_sports_dp = data_sports.drop_duplicates(subset="Athlete")
 
 
-# In[87]:
+# In[47]:
 
 
 len(data_sports_dp)  == len(a)
 
 
-# In[93]:
+# In[48]:
 
 
 data_final = pd.merge(left= data_main_country, right=data_sports_dp,
                       left_on ="Athlete", right_on = "Athlete")
 
 
-# In[94]:
+# In[49]:
 
 
 data_final.head()
 
 
-# In[95]:
+# In[50]:
 
 
 data_final.shape
+
+
+# ### Tipos de Joins
+
+# In[51]:
+
+
+from IPython.display import Image
+import numpy as np
+
+
+# ***Inner join <= A (Left join), B (Right join) <= Outer Join***
+
+# ### Inner join
+#  * Devuelve un data frame con las filas que tienen valor tanto en el primer como en el segundo data frame que estamos uniendo
+#  * El número de filas será igual al número de filas **comunes** que tengan ambos data sets
+#      * Data Set A tiene 60 filas
+#      * Data Set B tiene 50 filas
+#      * Ambos comparten 30 filas
+#      * Entocnes A Inner join B tendrá 30 filas
+#  * En términos de teoría de conjuntos, se trata de la intersección de los dos conjuntos
+
+# In[52]:
+
+
+get_ipython().run_line_magic('cd', '"/home/jovyan/python/resources"')
+get_ipython().run_line_magic('ls', '')
+dirImageJoin =  "/home/jovyan/python/resources/inner-join.png"
+dirImageLeft =  "/home/jovyan/python/resources/left-join.png"
+dirImageRight =  "/home/jovyan/python/resources/right-join.png"
+dirImageOuter =  "/home/jovyan/python/resources/outer-join.png"
+
+
+# In[53]:
+
+
+Image(filename=dirImageJoin)
+
+
+# ### Left join
+#  * Devuelve un data frame con las filas que tuvieran valor en el dataset de la izquierda, sin importar si tienen correspondencia en el de la izquierda o no.
+#  * El número de filas será igual al número de filas **del data frame izquierdo**
+#      * Data Set A tiene 60 filas
+#      * Data Set B tiene 50 filas
+#      * Entonces A Right join B tendrá 50 filas
+#  * En términos de teoría de conjuntos, se trata del propio data set de la derecha quien, además tiene la intersección en su interior
+
+# In[54]:
+
+
+Image(filename=dirImageLeft)
+
+
+# ### Right join
+#  * Devuelve un data frame con las filas que tuvieran valor en el dataset de la derecha, sin importar si tienen correspondencia en el de la derecha o no.
+#  * El número de filas será igual al número de filas **del data frame izquierdo**
+#      * Data Set A tiene 60 filas
+#      * Data Set B tiene 50 filas
+#      * Entonces A Left join B tendrá 60 filas
+#  * En términos de teoría de conjuntos, se trata del propio data set de la izquierda quien, además tiene la intersección en su interior
+
+# In[55]:
+
+
+Image(filename=dirImageRight)
+
+
+# ### Outer join
+#  * Devuelve un data frame con todas las filas de ambos, reemplazando las ausencias de uno o de otro con Nas en la región específica.
+#  * La filas del data frame final que no correspondan a ninguna fila del data frame derecho(o izquierdo), tendrán Nas en las columnas del data frame derecho(o izquierdo)
+#  * El número de filas será igual al **máximo número de filas de ambos data frames**
+#      * Data Set A tiene 60 filas
+#      * Data Set B tiene 50 filas
+#      * Entonces A Outer join B tendrá 80 filas
+#  * En términos de teoría de conjuntos, se trata de la unión de conjuntos
+
+# In[56]:
+
+
+Image(filename=dirImageOuter)
+
+
+# In[58]:
+
+
+
+out_athletes = np.random.choice(data_main["Athlete"], size = 6, replace = False)
+
+
+# In[71]:
+
+
+data_country_dlt = data_country_dp[(-data_country_dp["Athlete"].isin(out_athletes))
+                                   & 
+                                   (data_country_dp["Athlete"] != "Michael Phelps")
+                                  ]
+
+data_sports_dlt = data_sports_dp[(-data_sports_dp["Athlete"].isin(out_athletes))
+                                   & 
+                                   (data_sports_dp["Athlete"] != "Michael Phelps")]
+
+data_main_dlt = data_main[(-data_main["Athlete"].isin(out_athletes))
+                                   & 
+                                   (data_main["Athlete"] != "Michael Phelps")]
+
+
+# In[66]:
+
+
+len(data_country_dlt) - len(data_country_dp)
+
+
+# In[72]:
+
+
+len(data_country_dlt) 
+
+
+# In[73]:
+
+
+len(data_sports_dlt) 
+
+
+# In[75]:
+
+
+len(data_main) 
+
+
+# In[77]:
+
+
+#data_main contiene toda la info
+#data_country_dlt le falta la info de 7 atletas
+len(data_country_dlt)  -  len(data_main) 
+merged_inner = pd.merge(left = data_main, right = data_country_dlt, how= "inner", left_on = "Athlete", right_on = "Athlete")
+
+
+# In[79]:
+
+
+len(merged_inner)
+
+
+# In[80]:
+
+
+merged_inner.head()
 
 
 # In[ ]:
